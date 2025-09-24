@@ -1,0 +1,34 @@
+.Text {
+  font-family: var(--font-family-base);
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.TextColorPrimary {
+  color: var(--color-text-primary);
+}
+.TextColorSecondary {
+  color: var(--color-text-secondary);
+}
+
+.TextFontSizeSm {
+  font-size: var(--font-size-sm);
+}
+.TextFontSizeBase {
+  font-size: var(--font-size-base);
+}
+
+.TextFontWeightRegular {
+  font-weight: var(--font-weight-regular);
+}
+.TextFontWeightMedium {
+  font-weight: var(--font-weight-medium);
+}
+.TextFontWeightSemibold {
+  font-weight: var(--font-weight-semi-bold);
+}
+.TextFontWeightBold {
+  font-weight: var(--font-weight-bold);
+}

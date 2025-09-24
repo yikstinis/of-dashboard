@@ -1,0 +1,20 @@
+.ChartPieLegendItem {
+  display: inline-flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  margin-bottom: var(--spacing-x5s);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+}
+
+.ChartPieLegendLabelValue {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+}
+
+.ChartPieLegendLabel {
+  margin-left: var(--spacing-x5s);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+}

@@ -1,0 +1,9 @@
+.Logotype {
+  text-decoration: none;
+  padding: var(--spacing-xl) var(--spacing-x6l);
+}
+
+.LogotypeIcon {
+  width: 100%;
+  height: auto;
+}

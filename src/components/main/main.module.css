@@ -1,0 +1,13 @@
+.Main {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: var(--spacing-x3l) var(--spacing-x6l);
+}
+
+/**
+ * You may have some media queries inside layout components.
+ * For example main component spacing may change depending on screen size.
+ */
+@media {
+}

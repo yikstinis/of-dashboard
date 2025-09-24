@@ -1,0 +1,36 @@
+.NavigationLink {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  color: var(--color-text-secondary);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+  text-decoration: none;
+  border-bottom: 1.5px solid transparent;
+}
+
+/**
+ * We may add some hover styles for interactive elements later?..
+ * Would be nice to add some transition effects as well.
+ */
+.NavigationLink:hover {
+}
+
+/**
+ * Switching to bold font style feels a bit strange.
+ * This effect causes navigation layout to shift a bit.
+ * TODO: Maybe we are supposed to prevent this shifting somehow?..
+ */
+.NavigationLinkActive {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  border-bottom: 1.5px solid var(--color-text-primary);
+}
+
+.NavigationLinkDropdownIcon {
+  margin-left: var(--spacing-x5s);
+  color: var(--color-text-secondary);
+}

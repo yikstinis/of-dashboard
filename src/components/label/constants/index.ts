@@ -1,0 +1,1 @@
+export { LabelType } from './type';

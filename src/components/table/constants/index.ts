@@ -1,0 +1,1 @@
+export { TableCellSpacing } from './spacing';

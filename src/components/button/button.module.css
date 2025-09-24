@@ -1,0 +1,24 @@
+/**
+ * Have limited figma access, cant navigate to main component.
+ * TODO: Some hover/pressed states with transitions should be added..
+ */
+.Button {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  min-height: var(--size-button);
+  gap: var(--spacing-x3s);
+  border: 0;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--border-radius-sm);
+  background-color: var(--color-background-accent);
+  color: var(--color-text-default-invert);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semi-bold);
+  line-height: var(--line-height-base);
+}
+
+.ButtonIcon {
+  color: var(--color-text-default-invert);
+}

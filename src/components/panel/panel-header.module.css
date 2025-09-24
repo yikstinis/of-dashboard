@@ -1,0 +1,14 @@
+.PanelHeader {
+  display: flex;
+  flex-direction: row;
+  padding: var(--spacing-lg);
+}
+
+.PanelHeaderTitle {
+  margin: 0;
+  font-family: var(--font-family-base);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  line-height: var(--line-height-base);
+  color: var(--color-text-primary);
+}

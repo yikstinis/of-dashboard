@@ -1,0 +1,5 @@
+.WidgetsNotifications,
+.WidgetsNotificationsIcon {
+  width: var(-size-icon-md);
+  height: var(-size-icon-md);
+}

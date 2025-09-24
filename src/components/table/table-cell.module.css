@@ -1,0 +1,8 @@
+.TableCell {
+  display: flex;
+  padding: var(--spacing-md);
+}
+
+.TableCellCompact {
+  padding: 0 var(--spacing-md);
+}

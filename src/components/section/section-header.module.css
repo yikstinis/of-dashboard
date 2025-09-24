@@ -1,0 +1,19 @@
+.SectionHeader {
+  display: flex;
+  flex-direction: 'row';
+  align-items: space-between;
+}
+
+.SectionHeaderTitle {
+  margin: 0;
+  flex-grow: 1;
+  color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-x2l);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-base);
+}
+
+.SectionHeaderChildren {
+  flex-grow: 0;
+}

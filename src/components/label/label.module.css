@@ -1,0 +1,17 @@
+.Label {
+  padding: var(--spacing-x5s) var(--spacing-x3s);
+  border-radius: var(--border-radius-base);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+}
+
+.LabelSuccess {
+  color: var(--color-text-positive);
+  background-color: var(--color-background-positive);
+}
+
+.LabelFailure {
+  color: var(--color-text-negative);
+  background-color: var(--color-background-negative);
+}

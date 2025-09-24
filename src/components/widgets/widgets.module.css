@@ -1,0 +1,7 @@
+.Widgets {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: var(--spacing-xl) var(--spacing-x6l);
+  gap: var(--spacing-x3l);
+}
