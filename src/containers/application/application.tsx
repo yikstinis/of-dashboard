@@ -7,7 +7,7 @@ import { Navigation } from '@/components/navigation';
 import { Widgets } from '@/components/widgets';
 import { Main } from '@/components/main';
 import { Dashboard } from '@/containers/dashboard';
-import { useI18n } from '@/hoohs/use-i18n';
+import { useI18n } from '@/hooks/use-i18n';
 import { store } from '@/store';
 import type { ApplicationComponent } from './application.types';
 

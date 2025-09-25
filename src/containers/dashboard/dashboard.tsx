@@ -6,10 +6,10 @@ import { Table } from '@/components/table';
 import { Text } from '@/components/text';
 import { Label } from '@/components/label';
 import { formatUptime } from '@/helpers/format';
+import { useI18n } from '@/hooks/use-i18n';
 import { useDashboardVirtualMachines } from '@/store';
 import type { DashboardComponent } from './dashboard.types';
 import { useCallback } from 'react';
-import { useI18n } from '@/hoohs/use-i18n';
 
 const STATE_DATA = [
   {
