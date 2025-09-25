@@ -28,6 +28,7 @@ The project follows a modular structure for better maintainability.
 public/          # Static withought compilation
 src/             # Source application code
   components/    # Reusable stupid components
+  constants/     # Application-level constants
   containers/    # Smart containers with logic and layouts
   store/         # Redux store for global state management
   helpers/       # Utility functions with no context

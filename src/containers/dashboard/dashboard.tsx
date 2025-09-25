@@ -5,39 +5,17 @@ import { Panel } from '@/components/panel';
 import { Table } from '@/components/table';
 import { Text } from '@/components/text';
 import { Label } from '@/components/label';
+import {
+  SAMPLE_STATE,
+  SAMPLE_TREND,
+  SAMPLE_TREND_DOMAIN,
+  SAMPLE_TREND_TICKS,
+} from '@/constants/sample';
 import { formatUptime } from '@/helpers/format';
 import { useI18n } from '@/hooks/use-i18n';
 import { useDashboardVirtualMachines } from '@/store';
 import type { DashboardComponent } from './dashboard.types';
 import { useCallback } from 'react';
-
-const STATE_DATA = [
-  {
-    key: 'stopped',
-    value: 4,
-    color: 'rgba(220, 53, 69, 1)',
-    label: 'Stopped',
-  },
-  {
-    key: 'running',
-    value: 12,
-    color: 'rgba(69, 158, 116, 1)',
-    label: 'Running',
-  },
-];
-
-const TREND_DATA = [
-  { date: '11/06', value: 0 },
-  { date: '12/06', value: 300 },
-  { date: '13/06', value: 250 },
-  { date: '15/06', value: 400 },
-  { date: '17/06', value: 800 },
-  { date: '19/06', value: 600 },
-  { date: '21/06', value: 1200 },
-  { date: '23/06', value: 1500 },
-  { date: '25/06', value: 1800 },
-  { date: '27/06', value: 1400 },
-];
 
 // TODO: Would be nice to keep it with theme constants as layout size...
 const DASHBOARD_CHART_HEIGHT = 245;
@@ -89,7 +67,7 @@ export const Dashboard: DashboardComponent = () => {
           <Panel flexGrow={0.25}>
             <Panel.Header title={i18n.DASHBOARD_ELEMENT_STATE_TITLE} />
 
-            <Chart.Pie height={DASHBOARD_CHART_HEIGHT} data={STATE_DATA} />
+            <Chart.Pie height={DASHBOARD_CHART_HEIGHT} data={SAMPLE_STATE} />
           </Panel>
 
           <Panel flexGrow={0.75}>
@@ -97,10 +75,9 @@ export const Dashboard: DashboardComponent = () => {
 
             <Chart.Area
               height={DASHBOARD_CHART_HEIGHT}
-              data={TREND_DATA}
-              // TODO: Maybe domain and ticks should be calculated using data somehow?..
-              domain={[0, 2000]}
-              ticks={[0, 500, 1000, 1500, 2000]}
+              data={SAMPLE_TREND}
+              domain={SAMPLE_TREND_DOMAIN}
+              ticks={SAMPLE_TREND_TICKS}
               formatYAxisLabel={formatAreaChartYAxisLabel}
             />
           </Panel>
